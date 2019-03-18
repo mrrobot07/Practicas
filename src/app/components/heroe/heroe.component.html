@@ -1,0 +1,10 @@
+<div class="media animated fadeIn faster">
+    <img [src]="heroe.img" class="align-self-start mr-3" [alt]="heroe.nombre" height="150">
+    
+    <div class="media-body">
+      <h5 class="mt-0"> <img src="assets/img/{{heroe.casa}}.png" width="70" class="p-2">{{ heroe.nombre | uppercase }} - (<span class="text-muted">{{ heroe.aparicion | date:'y'}} )</span></h5>
+      <hr>
+      <p>{{ heroe.bio }}</p>
+      <button class="btn btn-success btn-block" [routerLink]='["/heroes"]' >Atras</button>
+    </div>
+  </div>
