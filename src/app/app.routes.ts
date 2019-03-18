@@ -13,7 +13,7 @@ const ROUTES : Routes =
     { path: 'heroes', component: HeroesComponent},
     { path: 'about', component:AboutComponent},
     { path: 'heroe/:id', component:HeroeComponent},
-    { path: 'heroe-buscado/:id', component:HeroeBuscadoComponent},
+    { path: 'heroe-buscado/:cadena', component:HeroeBuscadoComponent},
     { path: '**', pathMatch:'full', redirectTo:'home'}
 ]
 

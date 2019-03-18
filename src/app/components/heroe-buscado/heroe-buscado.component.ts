@@ -12,13 +12,15 @@ import { HeroesService } from '../../services/heroes.service';
 export class HeroeBuscadoComponent implements OnInit {
 
   heroes : any [];
+  cadena : string;
   constructor(private _activatedRoute : ActivatedRoute , private _heroesService : HeroesService , private router : Router) { }
 
   ngOnInit() 
   {
     this._activatedRoute.params.subscribe(params => 
     {
-      this.heroes = this._heroesService.buscarHeroes(params['id']);
+      this.heroes = this._heroesService.buscarHeroes(params['cadena']);
+      this.cadena = params['cadena'];
     })
   }
 

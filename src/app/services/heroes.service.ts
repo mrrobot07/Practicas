@@ -73,17 +73,17 @@ export class HeroesService
     return this.heroes[id];
   }
 
-  buscarHeroes( busqueda : string)
+  buscarHeroes( cadena : string)
   {
-    console.log(busqueda);
+    console.log(cadena);
     
     let heroesArr : Heroes [] = [];
-    busqueda = busqueda.toLowerCase();
+    cadena = cadena.toLowerCase();
 
     for(let heroe of this.heroes)
     {
       let nombre = heroe.nombre.toLowerCase();
-      if(nombre.indexOf(busqueda) >= 0)
+      if(nombre.indexOf(cadena) >= 0)
       {
         heroesArr.push(heroe);
       }
