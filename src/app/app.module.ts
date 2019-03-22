@@ -10,6 +10,7 @@ import { APP_ROUTING } from './app.routes';
 import { HeroesService } from './services/heroes.service';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { HeroeBuscadoComponent } from './components/heroe-buscado/heroe-buscado.component';
+import { HeroCardComponent } from './components/hero-card/hero-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HeroeBuscadoComponent } from './components/heroe-buscado/heroe-buscado.
     HeroesComponent,
     HomeComponent,
     HeroeComponent,
-    HeroeBuscadoComponent
+    HeroeBuscadoComponent,
+    HeroCardComponent
   ],
   imports: [
     BrowserModule,
